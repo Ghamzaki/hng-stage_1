@@ -4,10 +4,10 @@ from typing import Optional
 import uuid6
 from datetime import datetime, timezone
 
-from database import get_pool
-from models import ProfileRequest, ProfileFull, ProfileSummary
-from services.external import fetch_all
-from services.classifier import get_age_group, get_top_country
+from app.database import get_pool
+from app.models import ProfileRequest, ProfileFull, ProfileSummary
+from app.services.external import fetch_all
+from app.services.classifier import get_age_group, get_top_country
 
 router = APIRouter(prefix="/api/profiles")
 

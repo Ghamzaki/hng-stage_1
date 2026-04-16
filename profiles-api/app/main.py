@@ -2,8 +2,8 @@ from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
-from database import init_db
-from routers.profiles import router as profiles_router
+from app.database import init_db
+from app.routers.profiles import router as profiles_router
 
 app = FastAPI()
 
