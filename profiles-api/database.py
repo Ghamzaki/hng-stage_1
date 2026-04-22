@@ -69,7 +69,7 @@ async def seed_db():
                 p["country_id"],
                 p["country_name"],
                 p["country_probability"],
-                datetime.now(timezone.utc).replace(tzinfo=None),
+                datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
             )
             if result == "INSERT 0 1":
                 inserted += 1
