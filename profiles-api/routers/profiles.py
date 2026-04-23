@@ -171,7 +171,7 @@ async def search_profiles(
 
     filters = parse_query(q.strip())
     if filters is None:
-        return {"status": "error", "message": "Unable to interpret query"}
+        raise HTTPException(status_code=400, detail="Unable to interpret query")
 
     pool = await get_pool()
     async with pool.acquire() as conn:
