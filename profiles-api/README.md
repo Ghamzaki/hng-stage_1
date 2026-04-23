@@ -150,8 +150,8 @@ If the parser cannot extract any filter from the query, it returns:
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/yourusername/insighta-api
-cd insighta-api
+git clone https://github.com/Ghamzaki/hng-stage_1
+cd hng-stage_1
 
 # 2. Install dependencies
 pip install -r requirements.txt
